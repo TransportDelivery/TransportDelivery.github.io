@@ -460,6 +460,7 @@ footer{
     padding: 0 16px;
     display: flex;
     align-items: flex-start;
+    text-align: center;
 }
 
 .footer_adress, .footer_number, .me{
@@ -487,12 +488,13 @@ footer{
 }
 
 .me{
-    margin-top: 10px;
-    margin-left: 214px;
-    white-space: 8px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-left: 212px;
 }
 
-.me > a{
+.kostya{
     font-size: 16px;
     font-weight: bold;
     color: yellow;
@@ -500,7 +502,7 @@ footer{
 
 br{
     display: none;
-}
+}    
 
 
 
@@ -537,6 +539,11 @@ br{
     
 }
 @media (min-width: 901px) and (max-width: 1023px){
+
+    .change_main_under_header_txt{
+        font-size: 50px;
+    }
+
     .header_nav:not(:last-child){
         padding-right: 10px;
     }
@@ -597,27 +604,26 @@ br{
         margin: 0 10px;
     }
 
-    .me{
-        margin-top: 10px;
-        margin-left: 10px;
-        word-spacing: 8px;
-    }
-
     br{
        display: block;
     }   
     
-    .me > a{
-        margin: 18px;
-    }
-
     footer{
         padding: 50px 0;
     }
+
+    .me{
+        margin-left: 0px;
+    }
+
 }
 @media (min-width: 768px) and (max-width: 900px){
     .header_nav:not(:last-child){
         padding-right: 10px;
+    }
+
+    .change_main_under_header_txt{
+        font-size: 46px;
     }
 
     .second_europe_block > img{
@@ -676,22 +682,17 @@ br{
         margin: 0 10px;
     }
 
-    .me{
-        margin-top: 10px;
-        margin-left: 10px;
-        word-spacing: 8px;
-    }
-
     br{
        display: block;
     }   
     
-    .me > a{
-        margin: 18px;
-    }
 
     footer{
         padding: 40px 0;
+    }
+
+    .me{
+        margin-left: 0;
     }
 }
 @media (min-width: 425px) and (max-width: 767px){
@@ -833,22 +834,16 @@ br{
         margin: 0 10px;
     }
 
-    .me{
-        margin-top: 0;
-        margin-left: 10px;
-        word-spacing: 8px;
-    }
-
     br{
        display: block;
     }   
-    
-    .me > a  > span{
-        margin: 0 18px;
-    }
 
     footer{
         padding: 40px 0;
+    }
+
+    .me{
+        margin-left: 0;
     }
 }
 @media (min-width: 375px) and (max-width: 424px){
@@ -873,7 +868,11 @@ br{
     }
 
     .change_main_under_header_txt{
-        font-size: 24px;
+        font-size: 20px;
+    }
+
+    .second_under_header_txt{
+        font-size: 16px;
     }
 
     .typed-cursor{
@@ -886,7 +885,7 @@ br{
     }
 
     .under_header_wrapper {
-        padding: 44px 24px;
+        padding: 44px 14px;
     }
 
     .main_europe_txt, .we_have_list > span{
@@ -997,19 +996,9 @@ br{
         margin: 0 10px;
     }
 
-    .me{
-        margin-top: 0;
-        margin-left: 10px;
-        word-spacing: 8px;
-    }
-
     br{
        display: block;
     }   
-    
-    .me > a  > span{
-        margin: 0 18px;
-    }
 
     footer{
         padding: 40px 0;
@@ -1021,6 +1010,10 @@ br{
 
     .first_info{
         font-size: 50px;
+    }
+
+    .me{
+        margin-left: 0;
     }
 
 }
@@ -1047,7 +1040,11 @@ br{
     }
 
     .change_main_under_header_txt{
-        font-size: 24px;
+        font-size: 18px;
+    }
+
+    .second_under_header_txt {
+        font-size: 14px;
     }
 
     .typed-cursor{
@@ -1060,7 +1057,7 @@ br{
     }
 
     .under_header_wrapper {
-        padding: 44px 24px;
+        padding: 44px 14px;
     }
 
     .main_europe_txt, .we_have_list > span{
@@ -1170,19 +1167,9 @@ br{
         margin: 0 10px;
     }
 
-    .me{
-        margin-top: 0;
-        margin-left: 10px;
-        word-spacing: 8px;
-    }
-
     br{
        display: block;
     }   
-    
-    .me > a  > span{
-        margin: 0 18px;
-    }
 
     footer{
         padding: 40px 0;
@@ -1196,4 +1183,9 @@ br{
     .first_info{
         font-size: 50px;
     }
+
+    .me{
+        margin-left: 0;
+    }
+
 }
