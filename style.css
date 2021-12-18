@@ -250,6 +250,7 @@ header{
 .second_europe_block{
     display: flex;
     column-gap: 50px;
+    margin-top: -40px;
 }
 
 .we_have_list{
@@ -260,7 +261,7 @@ header{
 .we_have, .we_have_list{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 25px;
     text-align: left;
     letter-spacing: 0.1em;
@@ -270,7 +271,7 @@ header{
 
 .we_have_list > span{
     color: rgba(200, 163, 95, 1);
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .we_have:not(:last-child){
@@ -502,10 +503,7 @@ footer{
 
 br{
     display: none;
-}    
-
-
-
+}   
 
 
 
@@ -534,6 +532,10 @@ br{
 
     .me{
         margin-left: 144px;
+    }
+
+    .first_europe_block{
+        width: 500px;
     }
 
     
