@@ -379,6 +379,7 @@ header{
 .about_us{
     display: flex;
     column-gap: 54px;
+    position: relative;
 }
 
 .under_body_block{
@@ -386,7 +387,7 @@ header{
     height: 482px;
     background-color: rgba(57, 63, 71, 1);
     position: absolute;
-    margin-left: 25%;
+    right: 0;
     z-index: -2;
 }
 
@@ -447,6 +448,8 @@ header{
 
 .map{
     margin-top: 100px;
+    margin: 100px auto 9px auto;
+    max-width: 1100px
 }    
 
 /*==================FOOTER===*/
@@ -455,6 +458,8 @@ footer{
     margin-top: -10px;
     padding: 60px 0;
     background-color: #C8A35F;
+    margin: 0 auto;
+    max-width: 1100px
 }
 
 .flex_footer{
@@ -504,13 +509,6 @@ footer{
 br{
     display: none;
 }   
-
-
-
-
-
-
-
 
 @media (min-width: 1024px) and (max-width: 1200px){
     .service_block{
